@@ -8,14 +8,20 @@ $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common Derp stuff.
 WITH_GAPPS := true
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 
 # Build Official-ly
-DERP_BUILDTYPE := Official
+WITH_GAPPS := true
+EVO_BUILD_TYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+EVO_DONATE_URL := https://paypal.me/ahmedtohamy1
+EVO_MAINTAINER := AhmedTohamy
+EVO_SUPPORT_URL := https://t.me/EvolutionXJuice
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_juice
+PRODUCT_NAME := evolution_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
