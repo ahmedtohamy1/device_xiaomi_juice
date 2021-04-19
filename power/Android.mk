@@ -23,7 +23,8 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_HEADER_LIBRARIES += \
     libutils_headers \
-    libhardware_headers
+    libhardware_headers \
+    libhardware_headers qti_powerhal_headers
 
 LOCAL_SRC_FILES := \
     power-common.c \
@@ -33,7 +34,8 @@ LOCAL_SRC_FILES := \
     powerhintparser.c \
     service.cpp \
     Power.cpp \
-    power-bengal.c
+    power-bengal.c \
+    power-feature.c
 
 LOCAL_C_INCLUDES := external/libxml2/include \
                     external/icu/icu4c/source/common
