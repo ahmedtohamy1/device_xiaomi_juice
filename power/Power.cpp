@@ -73,7 +73,7 @@ void set_feature(feature_t feature, int state) {
             struct input_event ev;
             ev.type = EV_SYN;
             ev.code = SYN_CONFIG;
-            ev.value = state ? INPUT_EVENT_WAKUP_MODE_ON : INPUT_EVENT_WAKUP_MODE_OFF;
+            ev.value = enabled ? INPUT_EVENT_WAKUP_MODE_ON : INPUT_EVENT_WAKUP_MODE_OFF;
             write(fd, &ev, sizeof(ev));
             close(fd);
         } break;
