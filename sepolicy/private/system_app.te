@@ -2,3 +2,8 @@ allow system_app vendor_default_prop:file { getattr open read };
 allow system_app vendor_default_prop:file {map};
 allow system_app sysfs_kgsl:file r_file_perms;
 get_prop(system_app, vendor_camera_prop);
+
+# Allow binder communication with hal_touchfeature_xiaomi_default
+binder_call(system_app, hal_touchfeature_default)
+
+allow system_app hal_touchfeature_hwservice_xiaomi:hwservice_manager find;
