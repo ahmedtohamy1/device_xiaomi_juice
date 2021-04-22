@@ -85,6 +85,7 @@ on post-fs-data
     chmod 0777 /vendor/bin/scancode_bin
 
 on early-boot
+    setprop sys.usb.controller a600000.dwc3
 
 on boot
 # wuzhisen change Define cpu set for audio app. This is to optimize
