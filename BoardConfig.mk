@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #
 # Copyright (C) 2021 The LineageOS Project
 #
@@ -392,4 +391,3 @@ BUILD_BROKEN_USES_BUILD_HOST_EXECUTABLE := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 include device/qcom/sepolicy_vndr/SEPolicy.mk
->>>>>>> a098720c3ad02fd43ecc7aedb3ed067156526540
