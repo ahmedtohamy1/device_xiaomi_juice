@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #
 # Copyright (C) 2021 The LineageOS Project
 #
@@ -12,4 +11,3 @@ COMMON_LUNCH_CHOICES := \
     evolution_juice-user \
     evolution_juice-userdebug \
     evolution_juice-eng
->>>>>>> a098720c3ad02fd43ecc7aedb3ed067156526540
