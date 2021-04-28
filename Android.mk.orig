@@ -1,3 +1,4 @@
+#
 <<<<<<< HEAD
 # Copyright (C) 2021 The LineageOS Project
 #
@@ -13,5 +14,8 @@ include $(CLEAR_VARS)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 endif
-
+=======
+# This empty Android.mk file exists to prevent the build system from
+# automatically including any other Android.mk files under this directory.
+#
 >>>>>>> a098720c3ad02fd43ecc7aedb3ed067156526540
