@@ -149,6 +149,7 @@ TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
+BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
