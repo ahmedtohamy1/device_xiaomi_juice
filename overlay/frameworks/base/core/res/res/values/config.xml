@@ -455,7 +455,7 @@
     </array>
 
     <!-- The maximum range of gamma adjustment possible using the screen
-         auto-brightness adjustment setting. -->
+         auto-adjustment setting. -->
      <fraction name="config_autoBrightnessAdjustmentMaxGamma">300.0%</fraction>
 
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
@@ -721,5 +721,14 @@
         <item>7,1</item>
         <item>9,1</item>
     </string-array>
+     
+     <!-- The component name, flattened to a string, for the default autofill service
+         to  enabled for an user. This service must be trusted, as it can be activated
+         without explicit consent of the user. If no autofill service with the
+          specified name exists on the device, autofill will be disabled by default.
+    -->
+     
+     <!-- Whether the device supports Smart Pixels --> 
+    <bool name="config_enableSmartPixels">true</bool>
 
 </resources>
